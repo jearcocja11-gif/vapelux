@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us — VAPELUX</title>
+  <title>Concierge — VAPELUX | Elite Support</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,19 +11,29 @@
 <nav class="navbar scrolled">
   <div class="container">
     <a href="index.html" class="nav-logo"><div class="logo-icon">💨</div><span>VAPELUX</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html#products">Products</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#categories">Collections</a></li>
+      <li><a href="index.html#products">Elite Series</a></li>
+      <li><a href="faq.html">Assistance</a></li>
     </ul>
+    <div class="nav-actions">
+      <button class="cart-toggle" id="cart-toggle">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
 <main>
 <section class="page-hero">
   <div class="container">
-    <h1>Get in <span class="gradient-text">Touch</span></h1>
-    <p>Have questions? Our team of experts is ready to help you.</p>
+    <span class="section-label">Direct Channel</span>
+    <h1>Elite <span class="gradient-text">Concierge</span></h1>
+    <p>Contact our master curators for personalized product guidance.</p>
   </div>
 </section>
 
@@ -34,35 +44,34 @@
         <div class="contact-info-cards">
           <div class="contact-info-card">
             <div class="icon">📍</div>
-            <h4>Visit Our Flagship</h4>
-            <p>123 Vapor Lane, Neon District<br>Los Angeles, CA 90210</p>
+            <h4>VAPELUX Boutique</h4>
+            <p>123 Neon Plaza, District 5<br>Los Angeles, CA 90210</p>
           </div>
           <div class="contact-info-card">
             <div class="icon">📧</div>
-            <h4>Email Support</h4>
-            <p>General: info@vapelux.com<br>Support: support@vapelux.com</p>
+            <h4>Elite Inquiries</h4>
+            <p>Master: concierge@vapelux.com<br>Support: assistance@vapelux.com</p>
           </div>
           <div class="contact-info-card">
             <div class="icon">📞</div>
-            <h4>Call Us</h4>
+            <h4>Priority Line</h4>
             <p>Mon-Fri, 9am - 6pm PST<br>+1 (888) VAPE-LUX</p>
           </div>
         </div>
       </div>
       
       <div class="reveal">
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! Our team will get back to you soon.'); this.reset();">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Email Address" required>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Inquiry received. A curator will contact you shortly.'); this.reset();">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Registry" required>
           <select required>
-            <option value="" disabled selected>Subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="order">Order Status</option>
-            <option value="product">Product Question</option>
-            <option value="return">Returns & Refunds</option>
+            <option value="" disabled selected>Inquiry Type</option>
+            <option value="concierge">Concierge Guidance</option>
+            <option value="order">Elite Order Status</option>
+            <option value="technical">Technical Support</option>
           </select>
-          <textarea placeholder="How can we help?" required></textarea>
-          <button type="submit" class="btn-primary">Send Message</button>
+          <textarea placeholder="How may we assist you today?" required></textarea>
+          <button type="submit" class="btn-primary">Send Inquiry</button>
         </form>
       </div>
     </div>
@@ -70,9 +79,9 @@
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer-simple">
   <div class="container">
-    <div class="footer-bottom"><p>&copy; 2026 VAPELUX. All rights reserved.</p></div>
+    <p>&copy; 2026 VAPELUX. Elite Concierge.</p>
   </div>
 </footer>
 <script src="script.js"></script>

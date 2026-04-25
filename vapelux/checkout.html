@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout — VAPELUX | Secure Payment</title>
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline';">
+  <title>Secure Checkout — VAPELUX | Elite Payments</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💨</text></svg>">
 </head>
 <body class="checkout-page">
 
@@ -22,88 +17,81 @@
       <span>VAPELUX</span>
     </a>
     <div class="nav-actions">
-      <a href="index.html#products" class="btn-outline" style="padding: 8px 20px; font-size: 0.8rem;">Back to Shop</a>
+      <a href="index.html#products" class="btn-outline" style="padding: 10px 24px; font-size: 0.8rem;">Return to Gallery</a>
     </div>
   </div>
 </nav>
 
 <main>
-  <section class="page-hero" style="padding: 100px 0 40px;">
+  <section class="page-hero">
     <div class="container">
-      <h1>Secure <span class="gradient-text">Checkout</span></h1>
-      <p>Complete your order with encrypted payment processing.</p>
+      <span class="section-label">Secure Acquisition</span>
+      <h1>Elite <span class="gradient-text">Checkout</span></h1>
+      <p>Finalize your selection through our high-encryption portal.</p>
     </div>
   </section>
 
-  <section class="page-content" style="padding-top: 0;">
+  <section class="page-content pt-0">
     <div class="container">
-      <div class="contact-grid">
-        <!-- Order Summary (Left) -->
+      <div class="checkout-grid">
+        
+        <!-- Summary -->
         <div class="reveal">
-          <div class="contact-info-card" style="margin-bottom: 24px;">
-            <h4>Order Summary</h4>
-            <div id="checkout-items" style="margin-top: 16px;">
+          <div class="contact-form" style="margin-bottom: 24px;">
+            <h3 style="margin-bottom: 24px;">Your Selection</h3>
+            <div id="checkout-items" style="display: flex; flex-direction: column; gap: 20px;">
               <!-- Items injected by JS -->
             </div>
-            <div style="border-top: 1px solid var(--glass-border); margin-top: 20px; padding-top: 20px;">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="color: var(--text-secondary);">Subtotal</span>
+            <div style="border-top: 1px solid var(--glass-border); margin-top: 30px; padding-top: 30px;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 12px; color: var(--text-secondary);">
+                <span>Subtotal</span>
                 <span id="checkout-subtotal">$0.00</span>
               </div>
-              <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="color: var(--text-secondary);">Shipping</span>
-                <span id="checkout-shipping">FREE</span>
-              </div>
-              <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.2rem; margin-top: 12px;">
+              <div style="display: flex; justify-content: space-between; font-size: 1.5rem; font-weight: 900; margin-top: 20px;">
                 <span>Total</span>
-                <span id="checkout-total" class="gradient-text" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: var(--gradient-main);">$0.00</span>
+                <span id="checkout-total" class="gradient-text">$0.00</span>
               </div>
             </div>
           </div>
-          <div class="contact-info-card" style="display: flex; align-items: center; gap: 12px; background: rgba(34, 197, 94, 0.05); border-color: rgba(34, 197, 94, 0.2);">
-            <div style="font-size: 1.5rem;">🔒</div>
+          <div class="contact-form" style="padding: 24px; display: flex; align-items: center; gap: 16px; border-color: var(--accent-2);">
+            <div style="font-size: 2rem;">🔒</div>
             <div>
-              <h4 style="margin:0; font-size: 0.9rem;">256-bit SSL Encryption</h4>
-              <p style="margin:0; font-size: 0.8rem;">Your data is protected by industry-leading security protocols.</p>
+              <h4 style="margin:0;">256-bit SSL Protection</h4>
+              <p style="margin:0; font-size: 0.85rem; color: var(--text-secondary);">Your transaction is secured by end-to-end encryption.</p>
             </div>
           </div>
         </div>
 
-        <!-- Checkout Form (Right) -->
+        <!-- Form -->
         <div class="reveal">
           <form class="contact-form" id="checkout-form">
-            <h3 style="font-family: 'Outfit'; margin-bottom: 16px;">Shipping Details</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <input type="text" placeholder="First Name" required id="ship-first">
-              <input type="text" placeholder="Last Name" required id="ship-last">
+            <h3 style="margin-bottom: 24px;">Shipping Concierge</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <input type="text" placeholder="First Name" required>
+              <input type="text" placeholder="Last Name" required>
             </div>
-            <input type="email" placeholder="Email Address" required id="ship-email">
-            <input type="text" placeholder="Street Address" required id="ship-address">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <input type="text" placeholder="City" required id="ship-city">
-              <input type="text" placeholder="Zip Code" required id="ship-zip">
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Street Address" required>
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px;">
+              <input type="text" placeholder="City" required>
+              <input type="text" placeholder="Postal Code" required>
             </div>
 
-            <h3 style="font-family: 'Outfit'; margin-bottom: 16px; margin-top: 24px;">Payment Method</h3>
-            <div style="margin-bottom: 16px;">
-              <div style="background: var(--bg-card); border: 1px solid var(--accent-1); padding: 16px; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 12px;">
-                <input type="radio" checked name="payment" id="pay-card">
-                <label for="pay-card" style="font-weight: 600;">Credit / Debit Card</label>
-                <div style="margin-left: auto; display: flex; gap: 8px; opacity: 0.7;">
-                  <span>💳</span>
-                </div>
-              </div>
+            <h3 style="margin-bottom: 24px; margin-top: 40px;">Payment Registry</h3>
+            <div style="background: rgba(139,92,246,0.1); border: 1px solid var(--accent-1); padding: 20px; border-radius: 16px; margin-bottom: 24px; display: flex; align-items: center; gap: 12px;">
+              <div style="width: 20px; height: 20px; border-radius: 50%; border: 6px solid var(--accent-1);"></div>
+              <span style="font-weight: 700;">Secure Credit Card</span>
+              <span style="margin-left: auto; opacity: 0.5;">💳</span>
             </div>
             
-            <input type="text" placeholder="Cardholder Name" required id="card-name">
-            <input type="text" placeholder="Card Number" required id="card-num" pattern="[0-9]{13,16}">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <input type="text" placeholder="MM / YY" required id="card-expiry">
-              <input type="password" placeholder="CVV" required id="card-cvv" maxlength="4">
+            <input type="text" placeholder="Name on Card" required>
+            <input type="text" placeholder="Card Number" required pattern="[0-9]{13,16}">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <input type="text" placeholder="MM / YY" required>
+              <input type="password" placeholder="CVV" required maxlength="4">
             </div>
 
-            <button type="submit" class="btn-primary" style="margin-top: 24px; padding: 18px;">Complete Secure Purchase</button>
-            <p style="text-align: center; font-size: 0.75rem; color: var(--text-secondary); margin-top: 12px;">By clicking "Complete Secure Purchase", you agree to our Terms of Service and Refund Policy.</p>
+            <button type="submit" class="btn-primary" style="width: 100%; padding: 20px; font-size: 1.1rem; margin-top: 30px;">Complete Order</button>
           </form>
         </div>
       </div>
@@ -111,27 +99,18 @@
   </section>
 </main>
 
-<!-- SUCCESS MODAL (Hidden) -->
-<div id="success-modal" style="position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; display: none; align-items: center; justify-content: center; backdrop-filter: blur(10px);">
-  <div class="contact-info-card" style="max-width: 400px; text-align: center; padding: 60px 40px; transform: translateY(20px); transition: transform 0.5s;">
-    <div style="font-size: 4rem; margin-bottom: 24px;">🎉</div>
-    <h2 style="font-family: 'Outfit'; margin-bottom: 12px;">Order Successful!</h2>
-    <p style="color: var(--text-secondary); margin-bottom: 32px;">Thank you for your purchase. A confirmation email has been sent to your inbox.</p>
-    <a href="index.html" class="btn-primary" style="display: block;">Return to Home</a>
+<!-- SUCCESS MODAL -->
+<div id="success-modal" class="modal-overlay">
+  <div class="modal-box">
+    <div style="font-size: 5rem; margin-bottom: 30px;">💎</div>
+    <h2 class="section-title">Order Confirmed</h2>
+    <p class="section-desc">Your elite selection is being prepared for dispatch. Welcome to the world of VAPELUX.</p>
+    <a href="index.html" class="btn-primary" style="display: block; padding: 18px;">Return to Gallery</a>
   </div>
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-bottom" style="border-top: none;">
-      <p>&copy; 2026 VAPELUX. All rights reserved. Secure Checkout.</p>
-    </div>
-  </div>
-</footer>
-
 <script src="script.js"></script>
 <script>
-// Specialized logic for checkout page
 document.addEventListener('DOMContentLoaded', () => {
   const itemsContainer = document.getElementById('checkout-items');
   const subtotalEl = document.getElementById('checkout-subtotal');
@@ -145,9 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     itemsContainer.innerHTML = items.map(item => `
-      <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-        <span style="font-size: 0.9rem;">${item.name} <span style="color: var(--text-secondary); font-size: 0.8rem;">x${item.qty}</span></span>
-        <span style="font-weight: 600;">$${(item.price * item.qty).toFixed(2)}</span>
+      <div class="checkout-item">
+        <div class="checkout-item-img">
+          <img src="${item.img}">
+        </div>
+        <div class="checkout-item-details">
+          <h4>${item.name}</h4>
+          <p>${item.brand} • x${item.qty}</p>
+        </div>
+        <span class="checkout-item-price">$${(item.price * item.qty).toFixed(2)}</span>
       </div>
     `).join('');
     
@@ -158,28 +143,20 @@ document.addEventListener('DOMContentLoaded', () => {
   
   updateCheckoutUI();
   
-  // Form submission
   const checkoutForm = document.getElementById('checkout-form');
   const successModal = document.getElementById('success-modal');
   
   if (checkoutForm) {
     checkoutForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
-      // Simulate processing
       const btn = checkoutForm.querySelector('button');
-      const originalText = btn.textContent;
-      btn.textContent = 'Processing...';
+      btn.textContent = 'Verifying Transaction...';
       btn.disabled = true;
       
       setTimeout(() => {
-        // Clear cart
         localStorage.removeItem('vapelux_cart');
         successModal.style.display = 'flex';
-        setTimeout(() => {
-          successModal.querySelector('div').style.transform = 'translateY(0)';
-        }, 10);
-      }, 2000);
+      }, 2500);
     });
   }
 });

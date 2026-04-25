@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — VAPELUX | Frequently Asked Questions</title>
+  <meta name="description" content="Find answers to common questions about VAPELUX products, shipping, returns, and more.">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💨</text></svg>">
+</head>
+<body>
+<canvas id="particles"></canvas>
+<nav class="navbar scrolled">
+  <div class="container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">💨</div><span>VAPELUX</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#categories">Categories</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#featured">About</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-toggle" id="cart-toggle" aria-label="Open cart">🛒<span class="cart-count" id="cart-count">0</span></button>
+      <a href="index.html#products" class="nav-cta">Shop Now</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+<div class="cart-drawer" id="cart-drawer">
+  <div class="cart-header"><h3>Your Cart</h3><button class="cart-close" id="cart-close">✕</button></div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-empty" id="cart-empty"><div class="cart-empty-icon">🛒</div><p>Your cart is empty</p><a href="index.html#products" class="btn-primary cart-shop-btn" id="cart-shop-btn">Browse Products</a></div>
+  <div class="cart-footer" id="cart-footer"><div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal-value">$0.00</span></div><div class="cart-shipping-note">Free shipping on orders over $50</div><button class="btn-primary cart-checkout-btn" id="cart-checkout-btn">Proceed to Checkout</button></div>
+</div>
+<div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-msg" id="toast-msg"></span></div>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <h1>Frequently Asked <span class="gradient-text">Questions</span></h1>
+    <p>Everything you need to know about VAPELUX, our products, shipping, and policies.</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question"><span>What payment methods do you accept?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We accept Visa, Mastercard, American Express, Discover, PayPal, Apple Pay, Google Pay, and Shop Pay. All transactions are processed through secure, PCI-DSS compliant payment gateways with 256-bit SSL encryption.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>How long does shipping take?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Standard shipping takes 3-5 business days. Express shipping (2-day) is available for $9.99. Orders placed before 3 PM EST on weekdays ship same day. Free standard shipping is available on orders over $50. We ship to all 50 US states.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>What is your return policy?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We offer a 30-day return policy on unopened and unused products in their original packaging. Defective items are eligible for exchange or refund within 90 days. E-liquids and opened consumable products cannot be returned for hygiene reasons. See our <a href="returns.html">Returns & Refunds</a> page for details.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Are your products authentic?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely. We are an authorized retailer for all brands we carry. Every product comes with a manufacturer's authenticity code that you can verify on the brand's official website. We never sell clones, counterfeits, or grey-market products.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you offer international shipping?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Currently, we ship within the United States only. We are working on expanding to Canada and select European countries in 2026. Sign up for our newsletter to be the first to know when international shipping becomes available.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>What age do I need to be to purchase?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">You must be 21 years of age or older to purchase any products from VAPELUX. We use third-party age verification services to confirm all customers' ages at checkout. This is in compliance with federal PACT Act regulations.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>How do I track my order?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Once your order ships, you'll receive an email with a tracking number and a link to track your package. You can also log in to your VAPELUX account to view order status and tracking information in real time.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you have a rewards program?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! Our VAPELUX Rewards program earns you 1 point for every $1 spent. Accumulate 200 points and redeem them for a $10 discount. You also earn bonus points for creating an account, leaving reviews, and referring friends.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Can I cancel or modify my order?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Orders can be cancelled or modified within 1 hour of placement. After that, orders enter our fulfillment pipeline and cannot be changed. Please contact our support team at support@vapelux.com as soon as possible if you need to make changes.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>What nicotine strengths do you offer?</span><span class="faq-arrow">▼</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Our e-liquids come in a variety of nicotine strengths: 0mg, 3mg, 6mg, and 12mg for freebase nicotine, and 20mg, 35mg, and 50mg for salt nicotine. Nicotine-free (0mg) options are available for most flavors.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about"><a href="index.html" class="nav-logo"><div class="logo-icon">💨</div><span>VAPELUX</span></a><p>Premium vape devices, artisan e-liquids, and expert guidance — all under one roof.</p></div>
+      <div class="footer-col"><h4>Shop</h4><a href="index.html#products">Box Mods</a><a href="index.html#products">Pod Systems</a><a href="index.html#products">E-Liquids</a><a href="index.html#products">Accessories</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="index.html#featured">About Us</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Support</h4><a href="shipping.html">Shipping Info</a><a href="returns.html">Returns & Refunds</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 VAPELUX. All rights reserved. Must be 21+ to purchase.</p><div class="footer-socials"><a href="#">📷</a><a href="#">🐦</a><a href="#">📘</a><a href="#">🎵</a></div></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ function sanitize(str) {
 // ========== SECURITY: RATE LIMITER ==========
 const rateLimiter = (() => {
   const attempts = {};
-  return function(key, maxAttempts, windowMs) {
+  return function (key, maxAttempts, windowMs) {
     const now = Date.now();
     if (!attempts[key]) attempts[key] = [];
     attempts[key] = attempts[key].filter(t => now - t < windowMs);
@@ -27,7 +27,7 @@ function generateCSRFToken() {
 const csrfToken = generateCSRFToken();
 
 // ========== AGE GATE ==========
-(function() {
+(function () {
   const gate = document.getElementById('age-gate');
   if (!gate) return;
   const verified = sessionStorage.getItem('vapelux_age_verified');
@@ -199,7 +199,7 @@ const Cart = (() => {
   }
 
   function save() {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch {}
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch { }
   }
 
   function getItems() { return [...items]; }
@@ -326,7 +326,7 @@ if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
 if (cartShopBtn) cartShopBtn.addEventListener('click', closeCart);
 if (cartCheckoutBtn) {
   cartCheckoutBtn.addEventListener('click', () => {
-    showToast('Checkout coming soon! 🚀');
+    window.location.href = 'checkout.html';
   });
 }
 

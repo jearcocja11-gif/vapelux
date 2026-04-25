@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VAPELUX — Premium Vape Store | Devices, E-Liquids & Accessories</title>
   <meta name="description" content="VAPELUX is your destination for premium vape devices, artisan e-liquids, and top-tier accessories. Elevate your vaping experience with curated collections.">
-  <!-- Security Meta Tags -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="DENY">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline';">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💨</text></svg>">
 </head>
 <body>
 
-<!-- AGE GATE -->
 <div class="age-gate" id="age-gate">
   <div class="age-gate-box">
     <div class="logo-icon">💨</div>
@@ -29,18 +26,13 @@
   </div>
 </div>
 
-<!-- CART OVERLAY -->
 <div class="cart-overlay" id="cart-overlay"></div>
-
-<!-- CART DRAWER -->
 <div class="cart-drawer" id="cart-drawer">
   <div class="cart-header">
     <h3>Your Cart</h3>
     <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
   </div>
-  <div class="cart-items" id="cart-items">
-    <!-- Items injected by JS -->
-  </div>
+  <div class="cart-items" id="cart-items"></div>
   <div class="cart-empty" id="cart-empty">
     <div class="cart-empty-icon">🛒</div>
     <p>Your cart is empty</p>
@@ -56,16 +48,13 @@
   </div>
 </div>
 
-<!-- TOAST NOTIFICATION -->
 <div class="toast" id="toast">
   <span class="toast-icon">✓</span>
   <span class="toast-msg" id="toast-msg">Added to cart!</span>
 </div>
 
-<!-- PARTICLES -->
 <canvas id="particles"></canvas>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="index.html" class="nav-logo">
@@ -93,7 +82,6 @@
 </nav>
 
 <main>
-<!-- HERO -->
 <section class="hero" id="hero">
   <div class="container">
     <div class="hero-content">
@@ -125,7 +113,6 @@
   </div>
 </section>
 
-<!-- BRANDS MARQUEE -->
 <section class="brands">
   <div class="marquee-track">
     <span class="brand-item">SMOK</span>
@@ -151,7 +138,6 @@
   </div>
 </section>
 
-<!-- CATEGORIES -->
 <section class="categories" id="categories">
   <div class="container">
     <div class="section-header reveal">
@@ -163,34 +149,33 @@
       <div class="category-card reveal">
         <div class="category-icon">⚡</div>
         <h3>Box Mods</h3>
-        <p>High-powered devices with advanced chipsets, temperature control, and customizable wattage for experienced vapers.</p>
+        <p>High-powered devices with advanced chipsets, temperature control, and customizable wattage.</p>
       </div>
       <div class="category-card reveal">
         <div class="category-icon">🌬️</div>
         <h3>Pod Systems</h3>
-        <p>Compact, portable, and incredibly easy to use. Perfect for on-the-go vaping with satisfying flavor and vapor production.</p>
+        <p>Compact, portable, and incredibly easy to use. Perfect for on-the-go vaping.</p>
       </div>
       <div class="category-card reveal">
         <div class="category-icon">🧪</div>
         <h3>E-Liquids</h3>
-        <p>Artisan-crafted juices in hundreds of flavors — from fruity blends to rich desserts, with freebase and salt nicotine options.</p>
+        <p>Artisan-crafted juices in hundreds of flavors — from fruity blends to rich desserts.</p>
       </div>
       <div class="category-card reveal">
         <div class="category-icon">🔧</div>
         <h3>Accessories</h3>
-        <p>Replacement coils, tanks, batteries, chargers, drip tips, and everything else to keep your setup running perfectly.</p>
+        <p>Replacement coils, tanks, batteries, chargers, and everything else you need.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
 <section class="products" id="products">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label"><span class="line"></span> Featured Products</div>
       <h2 class="section-title">Best Sellers & New Arrivals</h2>
-      <p class="section-desc">Hand-picked selections from the most popular and innovative products in the vaping world.</p>
+      <p class="section-desc">Hand-picked selections from the most popular and innovative products.</p>
     </div>
     <div class="products-grid">
       <div class="product-card reveal" data-id="1" data-name="Drag 4 Kit — 177W" data-price="59.99" data-brand="VooPoo" data-img="images/hero-vape.png">
@@ -238,9 +223,9 @@
           <button class="product-cart-btn" data-action="add-to-cart">Add to Cart</button>
         </div>
       </div>
-      <div class="product-card reveal" data-id="4" data-name="Nord 5 Pod System" data-price="34.99" data-brand="SMOK" data-img="images/store-interior.png">
+      <div class="product-card reveal" data-id="4" data-name="Nord 5 Pod System" data-price="34.99" data-brand="SMOK" data-img="images/pod-system.png">
         <div class="product-img">
-          <img src="images/store-interior.png" alt="SMOK Nord 5 Pod">
+          <img src="images/pod-system.png" alt="SMOK Nord 5 Pod">
           <span class="product-badge new">New</span>
         </div>
         <div class="product-info">
@@ -257,7 +242,6 @@
   </div>
 </section>
 
-<!-- FEATURED SECTION -->
 <section class="featured" id="featured">
   <div class="container">
     <div class="featured-grid">
@@ -269,26 +253,10 @@
         <h2>More Than a Store —<br>A <span class="gradient-text">Community</span></h2>
         <p>Since 2018, VAPELUX has been the go-to destination for vaping enthusiasts. We combine expert curation with unbeatable prices and a passion for quality.</p>
         <div class="feature-list">
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <span>Authentic products with manufacturer warranty</span>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <span>Free shipping on orders over $50</span>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <span>Expert staff with 10+ years of experience</span>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <span>Same-day dispatch on orders before 3 PM</span>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <span>30-day satisfaction guarantee</span>
-          </div>
+          <div class="feature-item"><div class="feature-check">✓</div><span>Authentic products with manufacturer warranty</span></div>
+          <div class="feature-item"><div class="feature-check">✓</div><span>Free shipping on orders over $50</span></div>
+          <div class="feature-item"><div class="feature-check">✓</div><span>Expert staff with 10+ years of experience</span></div>
+          <div class="feature-item"><div class="feature-check">✓</div><span>Same-day dispatch on orders before 3 PM</span></div>
         </div>
         <a href="#products" class="btn-primary">Shop the Collection</a>
       </div>
@@ -296,78 +264,47 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section class="testimonials" id="testimonials">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label"><span class="line"></span> Customer Reviews</div>
       <h2 class="section-title">What Our Customers Say</h2>
-      <p class="section-desc">Thousands of satisfied vapers trust VAPELUX for quality, speed, and unmatched customer service.</p>
     </div>
     <div class="testimonials-grid">
       <div class="testimonial-card reveal">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"VAPELUX is hands down the best vape store I've ever used. The selection is incredible, prices are fair, and my orders always arrive within 2 days. Highly recommend!"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">JM</div>
-          <div>
-            <div class="testimonial-name">Jake Mitchell</div>
-            <div class="testimonial-role">Verified Buyer</div>
-          </div>
-        </div>
+        <p class="testimonial-text">"VAPELUX is hands down the best vape store I've ever used. The selection is incredible!"</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">JM</div><div><div class="testimonial-name">Jake Mitchell</div></div></div>
       </div>
       <div class="testimonial-card reveal">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"I was new to vaping and the team at VAPELUX helped me find the perfect starter kit. Their customer support is top-notch — they genuinely care about their customers."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">SR</div>
-          <div>
-            <div class="testimonial-name">Sarah Rodriguez</div>
-            <div class="testimonial-role">Verified Buyer</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"The e-liquid collection is unreal — so many unique flavors you won't find anywhere else. The VAPELUX Originals line is seriously addictive. My go-to store now!"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">DL</div>
-          <div>
-            <div class="testimonial-name">David Lee</div>
-            <div class="testimonial-role">Verified Buyer</div>
-          </div>
-        </div>
+        <p class="testimonial-text">"The e-liquid collection is unreal. My go-to store now!"</p>
+        <div class="testimonial-author"><div class="testimonial-avatar">DL</div><div><div class="testimonial-name">David Lee</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- NEWSLETTER -->
 <section class="newsletter" id="newsletter">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label"><span class="line"></span> Stay Updated</div>
       <h2 class="section-title">Get 15% Off Your First Order</h2>
-      <p class="section-desc">Subscribe to our newsletter for exclusive deals, new product drops, and vaping tips delivered straight to your inbox.</p>
     </div>
     <form class="newsletter-form reveal" id="newsletter-form">
-      <input type="email" placeholder="Enter your email address" required id="newsletter-email" autocomplete="email">
+      <input type="email" placeholder="Enter your email address" required id="newsletter-email">
       <button type="submit" class="btn-primary">Subscribe</button>
     </form>
   </div>
 </section>
 </main>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
-        <a href="index.html" class="nav-logo">
-          <div class="logo-icon">💨</div>
-          <span>VAPELUX</span>
-        </a>
-        <p>Premium vape devices, artisan e-liquids, and expert guidance — all under one roof. Your satisfaction is our mission.</p>
+        <a href="index.html" class="nav-logo"><div class="logo-icon">💨</div><span>VAPELUX</span></a>
+        <p>Premium vape devices, artisan e-liquids, and expert guidance.</p>
       </div>
       <div class="footer-col">
         <h4>Shop</h4>
@@ -375,12 +312,10 @@
         <a href="#products">Pod Systems</a>
         <a href="#products">E-Liquids</a>
         <a href="#products">Accessories</a>
-        <a href="#products">Starter Kits</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <a href="#featured">About Us</a>
-        <a href="#testimonials">Reviews</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
@@ -389,19 +324,12 @@
         <h4>Support</h4>
         <a href="shipping.html">Shipping Info</a>
         <a href="returns.html">Returns & Refunds</a>
-        <a href="faq.html">FAQ</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 VAPELUX. All rights reserved. Must be 21+ to purchase.</p>
-      <div class="footer-socials">
-        <a href="#" aria-label="Instagram">📷</a>
-        <a href="#" aria-label="Twitter">🐦</a>
-        <a href="#" aria-label="Facebook">📘</a>
-        <a href="#" aria-label="TikTok">🎵</a>
-      </div>
     </div>
   </div>
 </footer>
